@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group1" android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/showTopItemsSection"
+            android:title="Set Show Top Items Amount"/>
+
+        <item
+            android:id="@+id/setEmailTime"
+            android:title="@string/set_email_time" />
+
+        <item
+            android:id="@+id/setMaxitemsPerEmail"
+            android:title="@string/max_items" />
+    </group>
+
+    <group android:id="@+id/group2" android:checkableBehavior="none">
+        <item
+            android:id="@+id/privacyPolicy"
+            android:title="@string/privacy_policy" />
+
+        <item
+            android:id="@+id/termsAndConditions"
+            android:title="@string/terms_conditions" />
+    </group>
+
+    <group android:id="@+id/group3" android:checkableBehavior="none">
+        <item
+            android:id="@+id/logout"
+            android:title="@string/logout_string" />
+    </group>
+
+    <group android:id="@+id/group4" android:checkableBehavior="none" android:visible="false">
+        <item
+            android:id="@+id/offlineMode"
+            android:title="@string/offline_mode" />
+    </group>
+</menu>

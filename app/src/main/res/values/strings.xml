@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Hacker News Later (or Now!)</string>
+    <string name="set_email">Set Email</string>
+    <string name="max_items">Set Max Items Per Email</string>
+    <string name="log_in_for_immediate_flow">You must be logged in to read stories now.</string>
+
+    <string name="set_email_time">Set Daily Email Time</string>
+    <string name="logout_string">Logout</string>
+    <string name="offline_mode">Currently in Offline Mode</string>
+
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_conditions">Terms and Conditions</string>
+    <string name="login_string">Login</string>
+    <string name="maybe_later">Maybe Later</string>
+    <string name="break_habit">Break the habit by paying for it. Read up to 25 items immediately for $5!</string>
+    <string name="server_down">A connection to the server cannot be made. Please try again later.</string>
+    <string name="show_replies">Show Replies</string>
+    <string name="hide_replies">Hide Replies</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="login">LOG IN</string>
+    <string name="register">SIGN UP</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."</string>
+
+    <string name="what_it_is">Hacker News Later is an app that can be used to queue the stories you\'re interested in, to be sent to your inbox.</string>
+    <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"https://lit-eyrie-32886.herokuapp.com\",\n  }\n}]</string>
+    <string name="top_items">Top Items</string>
+    <string name="queued_items">Queued Items</string>
+    <string name="offline_mode_toast_string">You are currently in offline mode.</string>
+    <string name="yc_podcast">YC Podcast</string>
+    <string name="yc_podcast_description">A show about technology in business, research, and art.</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+</resources>

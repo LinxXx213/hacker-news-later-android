@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/commentToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/hnColorPrimaryDark"
+        android:theme="@style/HackerNewsTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/commentNewsItemTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:maxLines="2"
+        android:textColor="@color/hnColorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:transitionName="newsItem"
+        app:layout_constraintBottom_toTopOf="@+id/commentSwipeRefreshLayout"
+        app:layout_constraintEnd_toStartOf="@+id/addItemToQueueButton"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commentToolbar" />
+
+    <ImageButton
+        android:id="@+id/addItemToQueueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_add_news_item"
+        android:transitionName="queueButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/commentNewsItemTitle"
+        app:layout_constraintTop_toBottomOf="@+id/commentToolbar" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/commentSwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemToQueueButton">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/commentRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/commentNewsItemTitle">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/commentLoadingProgressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="256dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/commentSwipeRefreshLayout"
+        app:layout_constraintEnd_toEndOf="@+id/commentSwipeRefreshLayout"
+        app:layout_constraintStart_toStartOf="@+id/commentSwipeRefreshLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/topItems"
+        android:enabled="true"
+        android:title="@string/top_items"
+        android:icon="@drawable/news_item"
+        android:iconTint="@android:color/white"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/queuedItems"
+        android:enabled="true"
+        android:title="@string/queued_items"
+        android:icon="@drawable/queue_icon"
+        android:iconTint="@android:color/white"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/podcast"
+        android:enabled="true"
+        android:title="@string/yc_podcast"
+        android:icon="@drawable/podcast"
+        android:iconTint="@android:color/white"
+        app:showAsAction="ifRoom" />
+
+</menu>
